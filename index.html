@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DevConnect 2026</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<div class="container"><a class="navbar-brand fw-bold" href="#">🚀 DevConnect</a></div>
+</nav>
+
+<section class="hero">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-6">
+<h1>DEVCONNECT <span>2026</span></h1>
+<h2>Conecta. Aprende. Desarrolla.</h2>
+<p>Comunidad tecnológica para programación, innovación y desarrollo de software.</p>
+<a href="#registro" class="btn btn-tech">🚀 Registrarme</a>
+</div>
+<div class="col-lg-6 text-center">
+<img class="robot" src="img/icons8-robot-96.png" alt="Robot de DevConnect">
+</div>
+</div>
+</div>
+</section>
+
+<section class="container py-5">
+<h2 class="text-center">¿Por qué participar?</h2>
+<div class="row g-4">
+<div class="col-md-4"><div class="card-tech">💻 Desarrollo<br>Aprende tecnologías modernas.</div></div>
+<div class="col-md-4"><div class="card-tech">👥 Comunidad<br>Comparte conocimientos.</div></div>
+<div class="col-md-4"><div class="card-tech">🚀 Innovación<br>Crea soluciones digitales.</div></div>
+</div>
+</section>
+
+<section id="registro" class="container py-5">
+<div class="formulario">
+<header class="registro-header">
+<span class="registro-etiqueta">TU PRÓXIMA CONEXIÓN EMPIEZA AQUÍ</span>
+<h2>Construyamos algo <span>increíble.</span></h2>
+<p>Crea tu perfil de desarrollador y encuentra tu lugar en DevConnect.</p>
+</header>
+<form id="registro-form">
+<p class="campos-nota">Los campos con <span aria-hidden="true">*</span> son obligatorios.</p>
+<fieldset class="registro-grupo">
+<legend><span class="grupo-numero" aria-hidden="true">01</span> Cuéntanos sobre ti</legend>
+<div class="datos-grid">
+<div class="campo campo-completo">
+<label for="nombre">Nombre completo <span aria-hidden="true">*</span></label>
+<input id="nombre" name="nombre" class="form-control" type="text" autocomplete="name" placeholder="¿Cómo te llamas?" maxlength="100" required>
+</div>
+<div class="campo">
+<label for="correo">Correo electrónico <span aria-hidden="true">*</span></label>
+<input id="correo" name="correo" class="form-control" type="email" autocomplete="email" placeholder="tu@correo.com" maxlength="254" required>
+</div>
+<div class="campo">
+<label for="telefono">Teléfono <span aria-hidden="true">*</span></label>
+<input id="telefono" name="telefono" class="form-control" type="tel" autocomplete="tel-national" inputmode="numeric" placeholder="300 123 4567" pattern="[0-9\s]{10,14}" maxlength="14" aria-describedby="telefono-ayuda" required>
+<small id="telefono-ayuda">10 dígitos; puedes separarlos con espacios.</small>
+</div>
+</div>
+</fieldset>
+<fieldset class="registro-grupo">
+<legend><span class="grupo-numero" aria-hidden="true">02</span> Tu mundo tech</legend>
+<fieldset class="opciones-grupo">
+<legend>¿Qué tecnologías te interesan? <span class="opcional">(opcional)</span></legend>
+<p class="campo-ayuda">Selecciona todas las que quieras explorar.</p>
+<div class="tecnologias">
+<label class="tech-opcion"><input type="checkbox" name="tecnologias" value="html5"> HTML5</label>
+<label class="tech-opcion"><input type="checkbox" name="tecnologias" value="css3"> CSS3</label>
+<label class="tech-opcion"><input type="checkbox" name="tecnologias" value="javascript"> JavaScript</label>
+<label class="tech-opcion"><input type="checkbox" name="tecnologias" value="python"> Python</label>
+<label class="tech-opcion"><input type="checkbox" name="tecnologias" value="sql"> SQL</label>
+</div>
+</fieldset>
+<fieldset class="opciones-grupo">
+<legend>Tu nivel de experiencia <span aria-hidden="true">*</span></legend>
+<div class="niveles">
+<label class="nivel-opcion"><input type="radio" name="nivel" value="basico" required><span><strong>Básico</strong><small>Estoy empezando</small></span></label>
+<label class="nivel-opcion"><input type="radio" name="nivel" value="intermedio" required><span><strong>Intermedio</strong><small>Ya creo proyectos</small></span></label>
+<label class="nivel-opcion"><input type="radio" name="nivel" value="avanzado" required><span><strong>Avanzado</strong><small>Tengo experiencia</small></span></label>
+</div>
+</fieldset>
+</fieldset>
+<div class="campo mensaje-campo">
+<label for="mensaje">¿Qué te gustaría construir? <span class="opcional">(opcional)</span></label>
+<textarea id="mensaje" name="mensaje" class="form-control" rows="4" maxlength="500" placeholder="Cuéntanos sobre tus ideas, intereses o lo que esperas aprender…" aria-describedby="mensaje-contador"></textarea>
+<small id="mensaje-contador" class="contador">0 / 500 caracteres</small>
+</div>
+<div class="registro-acciones">
+<p id="demo-nota">Formulario de demostración: tus datos no se envían ni se guardan.</p>
+<button type="submit" class="btn btn-tech" aria-describedby="demo-nota" disabled>Validar mi registro <span aria-hidden="true">→</span></button>
+</div>
+<p id="registro-estado" class="registro-estado" role="status" hidden></p>
+</form>
+<noscript><p>Activa JavaScript para validar la demostración. No hay un servicio de registro conectado.</p></noscript>
+</div>
+</section>
+
+<footer>© 2026 DevConnect | HTML5 CSS3 Bootstrap</footer>
+<script src="js/animaciones.js"></script>
+</body>
+</html>
